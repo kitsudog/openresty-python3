@@ -36,5 +36,5 @@ if [ "$1" = "nginx" -o "$1" = "nginx-debug" ]; then
         echo >&3 "$0: No files found in /docker-entrypoint.d/, skipping configuration"
     fi
 fi
-
+echo start nginx
 exec "$@"
