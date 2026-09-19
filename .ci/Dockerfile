@@ -17,3 +17,4 @@ RUN apk add --no-cache --virtual .build-deps build-base \
     && rm -rf /root/.cache/pip
 RUN apk add --no-cache libgcc
 RUN ln -s /usr/local/openresty/nginx/conf/nginx.conf /etc/nginx/nginx.conf
+RUN ln -s /usr/local/openresty/nginx/conf/mime.types /etc/nginx/mime.types
